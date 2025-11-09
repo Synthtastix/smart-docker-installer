@@ -1,6 +1,6 @@
 # S.M.A.R.T Docker Installer — Public Edition v2.2
 
-**Version:** 2.2  **License:** OPSL‑1.0‑Public Edition  **Status:** Stable / Enterprise‑Ready | 09-11-2025 
+**Version:** 2.2  **License:** OPSL‑1.0‑Public Edition  **Status:** Stable / Enterprise‑Ready | Update 09-11-2025 
 
 ---
 
