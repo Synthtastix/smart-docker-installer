@@ -102,6 +102,8 @@ Commercial use requires a separate Enterprise license agreement.
 
 
 
+
+
 # **README DEUTSCH**
 
 # 🧩 S.M.A.R.T Docker Installer — Public Edition v2.2
