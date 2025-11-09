@@ -1,10 +1,10 @@
-# 🧩 S.M.A.R.T Docker Installer — Public Edition v2.2
+# S.M.A.R.T Docker Installer — Public Edition v2.2
 
 **Version:** 2.2  **License:** OPSL‑1.0‑Public Edition  **Status:** Stable / Enterprise‑Ready  
 
 ---
 
-## 📘 Overview
+## Overview
 
 The **S.M.A.R.T Docker Installer** is an intelligent, secure, and fully automated deployment tool
 designed for modern DevOps environments. It connects GitHub repositories directly with Docker, Portainer, or Swarm instances, performs
@@ -15,7 +15,7 @@ end‑to‑end – from the source repository to live container infrastructu
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 | Category | Description |
 |-----------|--------------|
@@ -30,7 +30,7 @@ end‑to‑end – from the source repository to live container infrastructu
 
 ---
 
-## 🔒 Security & Compliance Highlights
+## Security & Compliance Highlights
 
 - Built‑in Zero‑Destruction mechanism to prevent accidental deletion.  
 - TLS 1.2+ and SSH validation (`StrictHostKeyChecking=yes`).  
@@ -40,7 +40,7 @@ end‑to‑end – from the source repository to live container infrastructu
 
 ---
 
-## ⚙️ Why This Tool Stands Out
+## Why This Tool Stands Out
 
 | Area | Benefit |
 |-------|----------|
@@ -52,7 +52,7 @@ end‑to‑end – from the source repository to live container infrastructu
 
 ---
 
-## 🧠 Use Cases
+## Use Cases
 
 - Automated container stack deployments for production and staging environments.  
 - Secure GitOps pipelines with integrated health and audit monitoring.  
@@ -61,7 +61,7 @@ end‑to‑end – from the source repository to live container infrastructu
 
 ---
 
-## ⚡ Quick Installation Guide
+## Quick Installation Guide
 
 ```bash
 # 1️⃣ Clone the repository
@@ -81,7 +81,7 @@ node stacklink-smart_v2.2.js --config ./smart.config.json --log json
 
 ---
 
-## 📦 System Requirements
+## System Requirements
 
 - Node.js ≥ 20 LTS  
 - Docker Engine ≥ 25 with Compose v2  
@@ -91,7 +91,7 @@ node stacklink-smart_v2.2.js --config ./smart.config.json --log json
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the **OPSL‑1.0‑Public Edition**.  
 Commercial use requires a separate Enterprise license agreement.
@@ -104,13 +104,13 @@ Commercial use requires a separate Enterprise license agreement.
 
 # **README DEUTSCH**
 
-# 🧩 S.M.A.R.T Docker Installer — Public Edition v2.2
+# S.M.A.R.T Docker Installer — Public Edition v2.2
 
 **Version:** 2.2  **Lizenz:** OPSL‑1.0‑Public Edition  **Status:** Stable / Enterprise‑Ready  
 
 ---
 
-## 📘 Überblick
+## Überblick
 
 Der **S.M.A.R.T Docker Installer** ist ein intelligentes, sicheres und vollständig automatisiertes Installations‑ und Deployment‑Tool für moderne DevOps‑Umgebungen. Er verbindet GitHub‑Repositorys direkt mit Docker‑, Portainer‑ oder Swarm‑Instanzen, überprüft jeden Schritt des Deployments, erstellt automatisch Audit‑Protokolle und schützt Infrastruktur‑Ressourcen durch eine integrierte Sicherheitsarchitektur.
 
@@ -118,7 +118,7 @@ Ziel ist eine **vollständig selbstvalidierende und auditierbare Bereitstellungs
 
 ---
 
-## 🚀 Hauptfunktionen
+## Hauptfunktionen
 
 | Kategorie | Beschreibung |
 |------------|---------------|
@@ -133,7 +133,7 @@ Ziel ist eine **vollständig selbstvalidierende und auditierbare Bereitstellungs
 
 ---
 
-## 🔒 Sicherheits‑ und Compliance‑Merkmale
+## Sicherheits‑ und Compliance‑Merkmale
 
 - Zero‑Destruction‑Mechanismus gegen versehentliche Löschung.  
 - TLS 1.2+ und SSH Validierung (`StrictHostKeyChecking=yes`).  
@@ -143,7 +143,7 @@ Ziel ist eine **vollständig selbstvalidierende und auditierbare Bereitstellungs
 
 ---
 
-## ⚙️ Warum dieses Tool besonders ist
+## Warum dieses Tool besonders ist
 
 | Bereich | Vorteil |
 |----------|----------|
@@ -155,7 +155,7 @@ Ziel ist eine **vollständig selbstvalidierende und auditierbare Bereitstellungs
 
 ---
 
-## 🧠 Einsatzszenarien
+## Einsatzszenarien
 
 - Automatisierte Bereitstellung von Container‑Stacks in Produktions‑ und Staging‑Umgebungen.  
 - Sichere GitOps‑Pipelines mit integriertem Health‑Monitoring.  
@@ -164,7 +164,7 @@ Ziel ist eine **vollständig selbstvalidierende und auditierbare Bereitstellungs
 
 ---
 
-## ⚡ Installation (Kurzüberblick)
+## Installation (Kurzüberblick)
 
 ```bash
 # 1️⃣ Repository klonen
@@ -184,7 +184,7 @@ node stacklink-smart_v2.2.js --config ./smart.config.json --log json
 
 ---
 
-## 📦 Systemvoraussetzungen
+## Systemvoraussetzungen
 
 - Node.js ≥ 20 LTS  
 - Docker Engine ≥ 25 mit Compose v2  
@@ -194,7 +194,7 @@ node stacklink-smart_v2.2.js --config ./smart.config.json --log json
 
 ---
 
-## 📜 Lizenz
+## Lizenz
 
 Dieses Projekt steht unter der **OPSL‑1.0‑Public Edition**.  
 Kommerzielle Verwendung erfordert eine separate Enterprise‑Lizenz.
