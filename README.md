@@ -85,30 +85,7 @@ Where others provide limited logs, S.M.A.R.T v2.3 exports **real-time Prometheus
 ➡ **Conclusion:**  
 S.M.A.R.T v2.3 unifies the simplicity of Docker Compose, the manageability of Portainer, and the audit resilience of enterprise systems — without the complexity or vendor dependency.
 
----
-
-## Quickstart
-
-```bash 
-# 1️⃣ Clone the repository
-git clone https://github.com/<user>/smart-docker-installer.git
-cd smart-docker-installer
-
-# 2️⃣ Initialize configuration
-node stacklink-smart_public_v2.3.js --init
-
-# 3️⃣ Edit your .env
-vim .env
-
-# 4️⃣ Run a dry-run (no changes)
-node stacklink-smart_public_v2.3.js --config smart.config.json --dry-run
-
-# 5️⃣ Deploy (Portainer or Swarm)
-node stacklink-smart_public_v2.3.js --config smart.config.json --target prod --log-json
-
-```markdown
 --- 
-
 
 # S.M.A.R.T Docker Installer — Public Edition v2.3  
 **Version:** 2.3  **Lizenz:** OPSL-1.0-Public  **Status:** Stable / Enterprise-Ready  
