@@ -1,0 +1,17 @@
+{
+  "_comment": "Example configuration \u2014 Adjust URLs, tokens and paths before using. Do NOT commit real secrets.",
+  "version": "2.2",
+  "project": "smart-docker-installer",
+  "targets": [
+    {
+      "name": "portainer-example",
+      "type": "portainer",
+      "api_url": "https://portainer.your-domain.tld/api",
+      "token_env": "PORTAINER_API_TOKEN",
+      "stack_name": "smart_example_stack",
+      "compose_path": "./examples/swarm.deploy.example.yml",
+      "endpoint_id": 1,
+      "verify_only": false
+    }
+  ]
+}

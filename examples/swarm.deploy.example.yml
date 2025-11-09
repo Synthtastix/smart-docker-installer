@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  whoami:
+    image: traefik/whoami:v1.10
+    deploy:
+      mode: replicated
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+    networks:
+      - public
+    ports:
+      - target: 80
+        published: 8080
+        protocol: tcp
+        mode: host
+
+networks:
+  public:
+    driver: overlay
+    attachable: true
