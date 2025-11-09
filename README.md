@@ -7,10 +7,8 @@
 ## 📘 Overview
 
 The **S.M.A.R.T Docker Installer** is an intelligent, secure, and fully automated deployment tool
-designed for modern DevOps environments.  
-It connects GitHub repositories directly with Docker, Portainer, or Swarm instances, performs
-comprehensive verification at each stage of the deployment, generates detailed audit logs,
-and protects system resources through a built‑in security architecture.
+designed for modern DevOps environments. It connects GitHub repositories directly with Docker, Portainer, or Swarm instances, performs
+comprehensive verification at each stage of the deployment, generates detailed audit logs, and protects system resources through a built‑in security architecture.
 
 Its purpose is to provide a **self‑validating, auditable deployment pipeline** that runs
 end‑to‑end – from the source repository to live container infrastructure – without manual intervention.
@@ -114,8 +112,7 @@ Commercial use requires a separate Enterprise license agreement.
 
 ## 📘 Überblick
 
-Der **S.M.A.R.T Docker Installer** ist ein intelligentes, sicheres und vollständig automatisiertes Installations‑ und Deployment‑Tool für moderne DevOps‑Umgebungen.  
-Er verbindet GitHub‑Repositorys direkt mit Docker‑, Portainer‑ oder Swarm‑Instanzen, überprüft jeden Schritt des Deployments, erstellt automatisch Audit‑Protokolle und schützt Infrastruktur‑Ressourcen durch eine integrierte Sicherheitsarchitektur.
+Der **S.M.A.R.T Docker Installer** ist ein intelligentes, sicheres und vollständig automatisiertes Installations‑ und Deployment‑Tool für moderne DevOps‑Umgebungen. Er verbindet GitHub‑Repositorys direkt mit Docker‑, Portainer‑ oder Swarm‑Instanzen, überprüft jeden Schritt des Deployments, erstellt automatisch Audit‑Protokolle und schützt Infrastruktur‑Ressourcen durch eine integrierte Sicherheitsarchitektur.
 
 Ziel ist eine **vollständig selbstvalidierende und auditierbare Bereitstellungspipeline**, die ohne manuelle Eingriffe auskommt – von der Codebasis bis zur laufenden Container‑Umgebung.
 
