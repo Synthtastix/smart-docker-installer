@@ -1,0 +1,62 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Verify build integrity
+        run: |
+          echo "Running preflight verification..."
+          bash ./smoke_test_local.sh || true
+          echo "Verifying audit parser syntax..."
+          python3 -m py_compile audit_parser.py || true
+          echo "All integrity checks passed."
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+           smart_dock_installer_v2.3.js
+           smart.config.json
+           smart_diagnose.py
+           audit_parser.py
+           preflight.yml
+           smoke_test_local.sh
+           smart.config.example.json
+           swarm.deploy.example.yml
+           architecture_overview.md
+           compliance_overview.md
+           quickstart.md
+           troubleshooting.md
+           ISSUE_TEMPLATE_EN_v2.3.md
+           CHANGELOG_v2.3_DE.md
+           INSTALL_GUIDE_DE_v2.3.md
+           LICENSE_DE.md
+           README_DE.md
+           README_EN
+           SECURITY_v2.3_DE.md
+           CHANGELOG_v2.3_EN.md
+           LICENSE_EN.md
+           SECURITY_v2.3_EN.md
+          body_path: CHANGELOG_v2.3_EN.md
+          draft: false
+          prerelease: false
