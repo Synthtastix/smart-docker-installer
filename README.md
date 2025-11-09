@@ -1,104 +1,111 @@
-# 🧩 S.M.A.R.T Docker Installer — Public Edition v2.2
-
-**Version:** 2.2  **License:** OPSL‑1.0‑Public Edition  **Status:** Stable / Enterprise‑Ready  
-
----
-
-## 📘 Overview
-
-The **S.M.A.R.T Docker Installer** is an intelligent, secure, and fully automated deployment tool
-designed for modern DevOps environments.  
-It connects GitHub repositories directly with Docker, Portainer, or Swarm instances, performs
-comprehensive verification at each stage of the deployment, generates detailed audit logs,
-and protects system resources through a built‑in security architecture.
-
-Its purpose is to provide a **self‑validating, auditable deployment pipeline** that runs
-end‑to‑end – from the source repository to live container infrastructure – without manual intervention.
+# 🧩 S.M.A.R.T Docker Installer — Public Edition v2.3  
+**Version:** 2.3  **License:** OPSL-1.0-Public  **Status:** Stable / Enterprise-Ready  
 
 ---
 
-## 🚀 Key Features
+## 🌐 Overview
+
+The **S.M.A.R.T Docker Installer** is a universal, secure, and fully automated deployment solution for modern **DevOps** and **GitOps** environments.  
+Public Edition v2.3 is designed for **teams, start-ups, and enterprises** that need containerized workloads deployed **reliably, reproducibly, and with built-in compliance** — without depending on heavy CI/CD infrastructure.
+
+Unlike traditional tools such as *Docker Compose*, *Portainer Stacks*, or *Jenkins Pipelines*, the S.M.A.R.T Installer introduces a self-governing control layer that combines **validation, security, rollback, observability, and auditing** in a single portable binary.  
+It runs entirely offline, requires no agents or servers, and enforces strong operational safety policies by default.
+
+---
+
+## 🚀 What’s New in v2.3
 
 | Category | Description |
-|-----------|--------------|
-| **Automated Setup** | Establishes full GitHub ⇄ Docker ⇄ Portainer ⇄ Swarm connections with zero manual configuration. |
-| **Zero‑Destruction Policy** | Guarantees that no existing stacks, containers, or data are accidentally deleted or overwritten. |
-| **Multi‑Target Deployments** | Supports simultaneous deployment to multiple targets from one configuration file. |
-| **Self‑Audit & Health Check** | Each run creates a state and health audit file with SHA‑256 hash and status verification. |
-| **CI/CD Integration** | Generates GitHub Action workflows and automated pipeline triggers on push or PR. |
-| **SSH & TLS Hardening** | Enforces secure communication and validates credentials and certificates. |
-| **Retry & Backoff System** | Resilient error handling for unstable API connections and timeouts. |
-| **Portable Standalone CLI** | Runs on any Node.js ≥ 20 environment – no framework dependencies. |
+|-----------|-------------|
+| **Self-Healing Engine** | Automatically detects failed deployments and performs recovery or rollback. |
+| **Schema Validation (AJV)** | Built-in JSON schema validation ensures configuration integrity before execution. |
+| **`.env` Auto-Loader** | Securely loads environment variables from `.env` at runtime. |
+| **Dynamic Overrides (`--set`)** | Modify configuration values on-the-fly — ideal for testing and CI pipelines. |
+| **`--doctor` Mode** | Performs comprehensive system and security diagnostics (Node, Docker, TLS, SSH). |
+| **`--rollback-to`** | Restores previous deployment states from audit history. |
+| **Webhook Listener (Port 3000)** | Receives GitHub/GitLab webhooks for zero-touch deployments. |
+| **Prometheus Metrics (Port 9090)** | Exposes live runtime and health metrics for monitoring dashboards. |
+| **Parallel Deployments** | Executes multiple deployment targets simultaneously (up to 5). |
 
 ---
 
-## 🔒 Security & Compliance Highlights
+## 💡 Strategic Value for DevOps Teams
 
-- Built‑in Zero‑Destruction mechanism to prevent accidental deletion.  
-- TLS 1.2+ and SSH validation (`StrictHostKeyChecking=yes`).  
-- Automatic credential redaction in logs and audit outputs.  
-- State files are atomically written with `0600` permissions.  
-- Audit trail compatible with ISO 27001 / SOC 2 / GDPR / ISO 42001.  
+### 1️⃣ **Reliability & Full Auditability**
+Unlike *Watchtower* or *Docker Auto-Updater*, which perform untracked rollouts,  
+the S.M.A.R.T Installer writes every step — including timestamps, hash, and exit status — to `./.state/last_run.json`.  
+➡ **Result:** full traceability and compliance alignment (ISO 27001 / SOC 2 / GDPR).
 
----
+### 2️⃣ **Zero-Destruction Policy**
+Tools like *Rancher CLI* or `docker stack deploy` overwrite existing stacks every time.  
+S.M.A.R.T prevents this by default — no resource is modified or deleted unless explicitly permitted via `--allow-destructive`.  
+➡ **Result:** unmatched safety for production environments.
 
-## ⚙️ Why This Tool Stands Out
+### 3️⃣ **Vendor-Neutral and Offline-Capable**
+While many CI/CD frameworks are tied to cloud ecosystems, S.M.A.R.T runs **completely standalone**, based only on **Node.js and Docker**.  
+➡ **Result:** no vendor lock-ins, no cloud dependencies, portable across data centers and edge devices.
 
-| Area | Benefit |
-|-------|----------|
-| **Security** | Unlike common deployment scripts, this tool has an integrated destruction lock and automatic integrity validation. |
-| **Automation** | Eliminates manual setup – the installer performs all preflight, connectivity, and health checks autonomously. |
-| **Reliability** | Backoff mechanisms and error classes ensure robust operation even under unstable network conditions. |
-| **Auditability** | Every deployment is traceable – including SHA hashes, status, version, and health reports. |
-| **Ease of Integration** | Plug‑and‑play for existing CI/CD pipelines and Docker environments. |
+### 4️⃣ **Reproducibility & Version Integrity**
+Each execution is verified via SHA-256 hashing and stored with audit metadata.  
+➡ **Result:** deterministic deployments — essential for audits, compliance, and DevSecOps maturity.
 
----
-
-## 🧠 Use Cases
-
-- Automated container stack deployments for production and staging environments.  
-- Secure GitOps pipelines with integrated health and audit monitoring.  
-- Enterprise deployments requiring compliance and traceability.  
-- Edge and remote cluster rollouts with zero‑touch operations.  
+### 5️⃣ **Transparent Observability**
+Where others provide limited logs, S.M.A.R.T v2.3 exports **real-time Prometheus metrics** compatible with Grafana, Datadog, or OpenTelemetry.  
+➡ **Result:** clear visibility into deployment timing, success rates, and operational health.
 
 ---
 
-## ⚡ Quick Installation Guide
+## ⚙️ Core Capabilities
+
+| Category | Description |
+|-----------|-------------|
+| **GitOps Integration** | Connects Git repositories directly to Docker/Swarm targets. |
+| **Self-Healing Logic** | Automatically retries or rolls back failing deployments. |
+| **Zero-Destruction Guard** | Prevents destructive actions without explicit confirmation. |
+| **Multi-Target Deployments** | Supports unlimited targets (Portainer, Swarm, Local). |
+| **Parallel Execution** | Up to 5 concurrent deployments — fully thread-safe. |
+| **Rollback System** | Revert to any previous state file instantly. |
+| **TLS/SSH Enforcement** | Enforces TLS ≥ 1.2 and strict host key checking. |
+| **Dynamic Config Overrides** | Adjust runtime values using `--set key=value`. |
+| **System Diagnostics** | `--doctor` checks versions, security, and connectivity. |
+| **Metrics & Webhooks** | Exposes internal metrics (9090) and webhook listener (3000). |
+
+---
+
+## 🧩 Competitive Landscape
+
+| Product | Architecture | Security | Parallel Deploy | Self-Healing | Observability | License |
+|----------|--------------|-----------|-----------------|---------------|---------------|---------|
+| **S.M.A.R.T Installer v2.3** | CLI + API Hybrid (Standalone) | ✅ Zero-Destruction + TLS 1.2+ | ✅ | ✅ | ✅ Prometheus + Audit Logs | OPSL-Public |
+| Docker Compose CLI | Local Manual | ⚠️ No Policy Enforcement | ❌ | ❌ | ❌ | Apache 2.0 |
+| Portainer Stacks | Web UI / API | ✅ TLS + RBAC | ⚠️ Sequential | ❌ | ⚠️ Basic Logs | Business / CE |
+| Jenkins Pipelines | Server-based | ⚠️ Config-dependent | ✅ | ⚠️ Partial | ⚠️ Plugins needed | MIT |
+| Rancher CLI | Cloud / Kubernetes | ✅ | ❌ | ❌ | ⚠️ Cluster Level Only | Apache 2.0 |
+
+➡ **Conclusion:**  
+S.M.A.R.T v2.3 unifies the simplicity of Docker Compose, the manageability of Portainer, and the audit resilience of enterprise systems — without the complexity or vendor dependency.
+
+---
+
+## ⚡ Quickstart
 
 ```bash
-# 1️⃣ Clone the repository
-git clone https://github.com/<user>/smart-docker-installer.git
-cd smart-docker-installer
+# 1️⃣ Clone the repository
+git clone https://github.com/<user>/smart-docker-installer.git
+cd smart-docker-installer
 
-# 2️⃣ Verify dependencies
-node -v
-docker version
+# 2️⃣ Initialize configuration
+node stacklink-smart_public_v2.3.js --init
 
-# 3️⃣ Dry‑Run test
-node stacklink-smart_v2.2.js --config ./smart.config.json --dry-run
+# 3️⃣ Edit your .env
+vim .env
 
-# 4️⃣ Deployment
-node stacklink-smart_v2.2.js --config ./smart.config.json --log json
-```
+# 4️⃣ Run a dry-run (no changes)
+node stacklink-smart_public_v2.3.js --config smart.config.json --dry-run
 
----
+# 5️⃣ Deploy (Portainer or Swarm)
+node stacklink-smart_public_v2.3.js --config smart.config.json --target prod --log-json
 
-## 📦 System Requirements
-
-- Node.js ≥ 20 LTS  
-- Docker Engine ≥ 25 with Compose v2  
-- Portainer (CE/BE) optional ≥ 2.19  
-- Git ≥ 2.45  
-- Internet access (port 443) for GitHub and API calls  
-
----
-
-## 📜 License
-
-This project is licensed under the **OPSL‑1.0‑Public Edition**.  
-Commercial use requires a separate Enterprise license agreement.
-
-© 2025 Sebastian Huehn 
 
 ## README DEUTSCH
 
