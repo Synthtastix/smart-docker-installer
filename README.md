@@ -89,6 +89,7 @@ S.M.A.R.T v2.3 unifies the simplicity of Docker Compose, the manageability of Po
 
 ## Quickstart
 
+```bash 
 # 1️⃣ Clone the repository
 git clone https://github.com/<user>/smart-docker-installer.git
 cd smart-docker-installer
@@ -105,6 +106,7 @@ node stacklink-smart_public_v2.3.js --config smart.config.json --dry-run
 # 5️⃣ Deploy (Portainer or Swarm)
 node stacklink-smart_public_v2.3.js --config smart.config.json --target prod --log-json
 
+```markdown
 --- 
 
 
