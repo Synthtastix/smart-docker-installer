@@ -1,0 +1,58 @@
+{
+  "_comment": "S.M.A.R.T Docker Installer \u2014 Public Release v2.2 | Main Configuration",
+  "version": "2.2",
+  "project": "smart-docker-installer",
+  "state_file": "./.state/last_run.json",
+  "logging": {
+    "level": "info",
+    "format": "json",
+    "stdout": true,
+    "file": "./logs/installer.log"
+  },
+  "retry_policy": {
+    "max_retries": 5,
+    "initial_delay_ms": 750,
+    "max_delay_ms": 8000,
+    "jitter": true
+  },
+  "security": {
+    "zero_destruction": true,
+    "mask_secrets_in_logs": true,
+    "tls_enforce_min": "TLSv1.2",
+    "ssh_strict_host_key_checking": true,
+    "deny_http_plaintext": true
+  },
+  "prechecks": {
+    "require_node_gte": "20.0.0",
+    "require_docker_gte": "25.0.0",
+    "require_git_gte": "2.45.0"
+  },
+  "targets": [
+    {
+      "name": "portainer-prod",
+      "type": "portainer",
+      "api_url": "https://portainer.example.com/api",
+      "token_env": "PORTAINER_API_TOKEN",
+      "stack_name": "smart_installer_prod",
+      "compose_path": "./examples/swarm.deploy.example.yml",
+      "endpoint_id": 1,
+      "verify_only": false
+    },
+    {
+      "name": "swarm-cluster",
+      "type": "swarm",
+      "docker_context": "default",
+      "stack_name": "smart_installer_swarm",
+      "compose_path": "./examples/swarm.deploy.example.yml",
+      "prune_orphans": false,
+      "verify_only": false
+    },
+    {
+      "name": "local-compose",
+      "type": "local",
+      "docker_context": "default",
+      "compose_path": "./examples/swarm.deploy.example.yml",
+      "verify_only": true
+    }
+  ]
+}
