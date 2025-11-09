@@ -94,8 +94,7 @@ S.M.A.R.T v2.3 unifies the simplicity of Docker Compose, the manageability of Po
 
 ## Überblick
 
-Der **S.M.A.R.T Docker Installer** ist ein universelles, sicheres und vollständig automatisiertes Deployment-Werkzeug für moderne **DevOps- und GitOps-Umgebungen**.  
-Die Public Edition v2.3 wurde speziell für **Teams, Start-ups und mittelständische Unternehmen** entwickelt, die containerisierte Anwendungen **verlässlich, reproduzierbar und compliant** bereitstellen möchten – ohne komplexe CI/CD-Infrastruktur.
+Der **S.M.A.R.T Docker Installer** ist ein universelles, sicheres und vollständig automatisiertes Deployment-Werkzeug für moderne **DevOps- und GitOps-Umgebungen**. Die Public Edition v2.3 wurde speziell für **Teams, Start-ups und mittelständische Unternehmen** entwickelt, die containerisierte Anwendungen **verlässlich, reproduzierbar und compliant** bereitstellen möchten – ohne komplexe CI/CD-Infrastruktur.
 
 Im Unterschied zu klassischen Tools wie *Docker Compose*, *Portainer Stacks* oder *Jenkins Pipelines* bietet der S.M.A.R.T Installer ein integriertes, selbstüberwachendes Steuerungssystem, das **Validierung, Security, Rollback, Observability und Audit-Trail** vereint – und das **ohne Abhängigkeit von externen Servern oder Cloud-Diensten**.
 
