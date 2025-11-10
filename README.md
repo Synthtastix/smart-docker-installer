@@ -1,17 +1,17 @@
-# S.M.A.R.T Docker Installer — Public Edition v2.3  
-**Version:** 2.3  **License:** OPSL-1.0-Public  **Status:** Stable / Enterprise-Ready  
+# S.M.A.R.T Docker Installer — Public Edition v2.3.0  
+**Version:** 2.3.0  **License:** OPSL-1.0-Public  **Status:** Stable / Enterprise-Ready  
 
 ---
 
 ## Overview
 
-The **S.M.A.R.T Docker Installer** is a universal, secure, and fully automated deployment solution for modern **DevOps** and **GitOps** environments. Public Edition v2.3 is designed for **teams, start-ups, and enterprises** that need containerized workloads deployed **reliably, reproducibly, and with built-in compliance** — without depending on heavy CI/CD infrastructure.
+The **S.M.A.R.T Docker Installer** is a universal, secure, and fully automated deployment solution for modern **DevOps** and **GitOps** environments. Public Edition v2.3.0 is designed for **teams, start-ups, and enterprises** that need containerized workloads deployed **reliably, reproducibly, and with built-in compliance** — without depending on heavy CI/CD infrastructure.
 
 Unlike traditional tools such as *Docker Compose*, *Portainer Stacks*, or *Jenkins Pipelines*, the S.M.A.R.T Installer introduces a self-governing control layer that combines **validation, security, rollback, observability, and auditing** in a single portable binary. It runs entirely offline, requires no agents or servers, and enforces strong operational safety policies by default.
 
 ---
 
-## What’s New in v2.3
+## What’s New in v2.3.0
 
 | Category | Description |
 |-----------|-------------|
@@ -48,7 +48,7 @@ Each execution is verified via SHA-256 hashing and stored with audit metadata.
 ➡ **Result:** deterministic deployments — essential for audits, compliance, and DevSecOps maturity.
 
 ### 5️⃣ **Transparent Observability**
-Where others provide limited logs, S.M.A.R.T v2.3 exports **real-time Prometheus metrics** compatible with Grafana, Datadog, or OpenTelemetry.  
+Where others provide limited logs, S.M.A.R.T v2.3.0 exports **real-time Prometheus metrics** compatible with Grafana, Datadog, or OpenTelemetry.  
 ➡ **Result:** clear visibility into deployment timing, success rates, and operational health.
 
 ---
@@ -85,20 +85,20 @@ S.M.A.R.T v2.3 unifies the simplicity of Docker Compose, the manageability of Po
 
 --- 
 
-# S.M.A.R.T Docker Installer — Public Edition v2.3  
-**Version:** 2.3  **Lizenz:** OPSL-1.0-Public  **Status:** Stable / Enterprise-Ready  
+# S.M.A.R.T Docker Installer — Public Edition v2.3.0  
+**Version:** 2.3.0  **Lizenz:** OPSL-1.0-Public  **Status:** Stable / Enterprise-Ready  
 
 ---
 
 ## Überblick
 
-Der **S.M.A.R.T Docker Installer** ist ein universelles, sicheres und vollständig automatisiertes Deployment-Werkzeug für moderne **DevOps- und GitOps-Umgebungen**. Die Public Edition v2.3 wurde speziell für **Teams, Start-ups und mittelständische Unternehmen** entwickelt, die containerisierte Anwendungen **verlässlich, reproduzierbar und compliant** bereitstellen möchten – ohne komplexe CI/CD-Infrastruktur.
+Der **S.M.A.R.T Docker Installer** ist ein universelles, sicheres und vollständig automatisiertes Deployment-Werkzeug für moderne **DevOps- und GitOps-Umgebungen**. Die Public Edition v2.3.0 wurde speziell für **Teams, Start-ups und mittelständische Unternehmen** entwickelt, die containerisierte Anwendungen **verlässlich, reproduzierbar und compliant** bereitstellen möchten – ohne komplexe CI/CD-Infrastruktur.
 
 Im Unterschied zu klassischen Tools wie *Docker Compose*, *Portainer Stacks* oder *Jenkins Pipelines* bietet der S.M.A.R.T Installer ein integriertes, selbstüberwachendes Steuerungssystem, das **Validierung, Security, Rollback, Observability und Audit-Trail** vereint – und das **ohne Abhängigkeit von externen Servern oder Cloud-Diensten**.
 
 ---
 
-## Was ist neu in v2.3
+## Was ist neu in v2.3.0
 
 | Bereich | Neuerung |
 |----------|-----------|
