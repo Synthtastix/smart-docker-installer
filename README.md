@@ -161,13 +161,13 @@ S.M.A.R.T v2.3 exportiert Echtzeit-Metriken via Prometheus und kann mit *Grafana
 
 | Produkt | Architektur | Sicherheit | Parallel Deploy | Self-Healing | Observability | Lizenz |
 |----------|--------------|-------------|-----------------|---------------|---------------|---------|
-| **S.M.A.R.T Installer v2.3** | CLI + API Hybrid (Standalone) | ✅ Zero-Destruction + TLS 1.2+ | ✅ | ✅ | ✅ Prometheus + Audit-Log | OPSL-Public |
+| **S.M.A.R.T Installer v2.3.0** | CLI + API Hybrid (Standalone) | ✅ Zero-Destruction + TLS 1.2+ | ✅ | ✅ | ✅ Prometheus + Audit-Log | OPSL-Public |
 | Docker Compose CLI | lokal / manuell | ⚠️ keine Policy | ❌ | ❌ | ❌ | Apache 2.0 |
 | Portainer Stacks | Web UI / API | ✅ TLS + Role-Based | ⚠️ sequentiell | ❌ | ⚠️ Basic Logs | Business / CE |
 | Jenkins Pipeline | Server-basiert | ⚠️ abhängig vom Setup | ✅ | ⚠️ teilweise | ⚠️ Plugins nötig | MIT |
 | Rancher CLI | Cloud / Kubernetes | ✅ | ❌ | ❌ | ⚠️ Cluster-Level nur | Apache 2.0 |
 
-➡ **Fazit:** S.M.A.R.T v2.3 kombiniert das Beste aus allen Welten – die Einfachheit von Compose, die API-Tiefe von Portainer und die Audit-Fähigkeit eines Enterprise-Systems – in einem einzigen portablen Tool.
+➡ **Fazit:** S.M.A.R.T v2.3.0 kombiniert das Beste aus allen Welten – die Einfachheit von Compose, die API-Tiefe von Portainer und die Audit-Fähigkeit eines Enterprise-Systems – in einem einzigen portablen Tool.
 
 ---
 
